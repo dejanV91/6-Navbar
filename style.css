@@ -1,0 +1,57 @@
+:root{
+    --bacgroundColor: rgb(235, 251, 255);
+    --iconColor: rgb(135, 126, 255);
+}
+
+html{
+    width: 100vw;
+    height:100vh;
+    
+}
+
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    background-color: var(--bacgroundColor);
+}
+
+header{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.404) ;
+}
+
+.logo-section a img:hover{
+    cursor:pointer;
+}
+
+/* hidden section for mobile display */
+.nav-section{
+    display: none;
+    
+}
+
+.icon-section i{
+    color: var(--iconColor);
+    font-size: 30px;
+    transition: 1s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon-section i:hover{
+    transform: rotate(90deg);
+    color: black;
+}
+
+/* border when clicked icon - i didn't finish */
+.icon-section i:focus-visible{
+    border: 2px solid var(--iconColor);
+}
+
