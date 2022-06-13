@@ -1,12 +1,12 @@
 :root{
     --bacgroundColor: rgb(235, 251, 255);
-    --iconColor: rgb(135, 126, 255);
+    --iconColor: rgb(190, 185, 252);
 }
 
 html{
     width: 100vw;
     height:100vh;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -32,9 +32,41 @@ header{
 }
 
 /* hidden section for mobile display */
-.nav-section{
+/* .nav-section{
     display: none;
     
+} */
+
+.nav-section{
+    height: 100%;
+    
+}
+
+.nav-section .nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    
+}
+
+.nav-section .nav-list li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-section .nav-list li:hover{
+    cursor: pointer;
+    background-color: var(--iconColor);
+    color: white;
+    transition: background-color 0.5s linear;
 }
 
 .icon-section i{
@@ -50,8 +82,42 @@ header{
     color: black;
 }
 
-/* border when clicked icon - i didn't finish */
-.icon-section i:focus-visible{
-    border: 2px solid var(--iconColor);
+/* hidden */
+menu{
+    padding: 0;
+    margin: 0;
+    display: none;
 }
+
+section menu ul{
+    list-style: none;
+    height: fit-content;
+    padding: 0;
+    line-height: 30px;
+    background-color: white;
+    margin: 0;
+    
+}
+
+section .slideMenu ul li{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 4px;
+}
+
+section .slideMenu ul li:hover{
+    background: var(--iconColor);
+    cursor: pointer;
+    color: rgb(110, 110, 255);
+    padding-left: 25px;
+    transition: background-color 0.5s linear;
+}
+
+
+
+
+
+
 
